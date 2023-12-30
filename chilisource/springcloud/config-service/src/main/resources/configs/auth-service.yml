@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://{주소}:3306/token?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: 
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      format_sql: true
+      ddl-auto: none
+  redis:
+    host: 
+    port: 6379
+
+  OAuth2:
+    google:
+      url : https://accounts.google.com/o/oauth2/v2/auth
+      client-id : 
+      client-secret : 
+      callback-url : 
+      scope: https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile
+
+token:
+  access_token:
+    expiration_time: 
+  refresh_token:
+    expiration_time: 
+  secret: 
+  refresh: 

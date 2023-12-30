@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://{주소}:3308/project?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: 
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      format_sql: true
+      ddl-auto: none
+
+cloud:
+  aws:
+    s3:
+      bucket: 
+    credentials:
+      access-key: 
+      secret-key: 
+    region:
+      static: ap-northeast-2
+      auto: false
+    stack:
+      auto: false
+
+token:
+  secret: 
+  refresh: 
